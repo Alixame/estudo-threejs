@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style type="text/css">
+      html, body {
+        background-color: #171717;
+        margin: 0;
+        padding: 0;
+      }
+
+      #scene {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+
+    <title>Three.js Course</title>
+
+   
+  </head>
+  <body>
+    <div id="scene"></div>
+
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@v0.149.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@v0.149.0/examples/jsm/"
+          }
+        }
+    </script>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
