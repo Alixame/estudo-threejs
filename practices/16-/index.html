@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js webgl - VSM Shadows example </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <style type="text/css">
+      html, body {
+        background-color: #171717;
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    #app {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .hero-section {
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      position: relative;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero-section .description {
+      position: relative;
+      margin-top: 50px;
+    }
+    
+    .description {
+      margin-top: 50px;
+      z-index: 2;
+    }
+    
+    #scene {
+      position: absolute;
+      inset: 0;
+    }
+    
+    .extra-section {
+        background-color: #272727;
+        color: #fff;
+        padding: 50px 20px;
+        text-align: center;
+    }
+    
+    .extra-section h1 {
+      margin-bottom: 20px;
+    }
+    
+    /* Add more styles as needed */
+    
+    </style>
+	</head>
+
+	<body>
+    <section class="hero-section">
+      <div class="description">
+        <h1>iPhone X</h1>
+        <h2>O melhor celular da atualidade</h2>
+      </div>
+
+      <div id="scene"></div>
+    </section>
+
+    <section class="extra-section">
+      <div class="description">
+        <h1>Recursos do iPhone</h1>
+        <p>Descubra os incríveis recursos do iPhone X.</p>
+      </div>
+    </section>
+
+		<script type="importmap">
+			{
+        "imports": {
+          "three": "https://unpkg.com/three@v0.149.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.149.0/examples/jsm/"
+        }
+      }
+		</script>
+    
+		<script type="module" src="main.js"></script>
+	</body>
+</html>
